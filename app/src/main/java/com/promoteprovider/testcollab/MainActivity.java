@@ -29,6 +29,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         switchBtn = findViewById(R.id.switchBtn);
         a3 = findViewById(R.id.a3);
+
+        Button A2=findViewById(R.id.A2);
+        A2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
         a3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
